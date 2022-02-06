@@ -1,0 +1,23 @@
+{
+  "name": "humidifier-controller",
+  "version": "0.1.0",
+  "description": "turnon or off my humidifier",
+  "main": "index.js",
+  "scripts": {
+    "test": "'",
+    "build": "tsc -p .",
+    "start": "npm run build:live",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}
