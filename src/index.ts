@@ -42,12 +42,12 @@ const fetchHumid = async (): Promise<number> => {
 };
 
 const isOverHumid = (humid: number) => {
-  const upperBorder = 60;
+  const upperBorder = 55;
   return humid >= upperBorder;
 };
 
 const isUnderHumid = (humid: number) => {
-  const underBorder = 50;
+  const underBorder = 45;
   return humid < underBorder;
 };
 
